@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tmb.factories;
+package com.tn.factories;
 
 import java.net.MalformedURLException;
 import org.openqa.selenium.WebDriver;

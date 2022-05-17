@@ -10,10 +10,10 @@ import com.tn.enums.CategoryType;
 import com.tn.pages.SearchPage;
 import com.tn.pages.YourStorePage;
 
-public final class TC_SearchPage extends BaseTest{
+public final class TC_SearchPageTest extends BaseTest{
 	
 	
-	private TC_SearchPage() {}
+	private TC_SearchPageTest() {}
 
 	
 	@Test
@@ -55,7 +55,7 @@ public final class TC_SearchPage extends BaseTest{
 		
 		String title = 
 				new YourStorePage()
-				.clickOnMyAccountDrpDown().clinkOnLoginLink()
+				.clickOnMyAccountDrpDown().clinkOnLoginLinkFromMyAccountDrpDown()
 		        .enterEmailAddress(data.get("username")).enterPassword(data.get("password"))
 		        .clickOnLoginBtn().getTitle();
 		

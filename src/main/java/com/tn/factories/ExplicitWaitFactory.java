@@ -1,4 +1,4 @@
-package com.tmb.factories;
+package com.tn.factories;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

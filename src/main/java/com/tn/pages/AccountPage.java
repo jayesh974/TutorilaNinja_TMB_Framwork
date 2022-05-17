@@ -12,6 +12,7 @@ public final class AccountPage extends BasePage {
 	protected AccountPage(){}
 	
 	private final By linklogout = By.linkText("Logout");
+	private final By linklogoutFromAccountDrpdwn = By.linkText("Logout");
 	
 	public String getTitle(){
 		return DriverManager.getDriver().getTitle();
@@ -24,4 +25,11 @@ public final class AccountPage extends BasePage {
 		return new LoginPage();
 	}
 
+	public LoginPage ClickOnLogOutLinkFromAccountDrpdwn()
+	{
+		
+		Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+		click(linklogoutFromAccountDrpdwn, WaitStrategy.CLICKABLE,"Logout linked from A/c drpdwn ");
+		return new LoginPage();
+	}
 }

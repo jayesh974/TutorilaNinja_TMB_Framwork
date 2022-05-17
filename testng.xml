@@ -10,10 +10,12 @@
 
 	<test thread-count="2" name="Test" parallel="methods">
 		<classes>
-			<!-- <class name="com.tn.tests.TC_LF_001_LoginPage" />
-			     <class name="com.tn.tests.AmazonDemoTest" /> 
-		       	<class name="com.tn.tests.TC_RegisterPageTests" />  -->
-		       	<class name="com.tn.tests.TC_SearchPage" />
+			 <class name="com.tn.tests.TC_LF_001_LoginPageTest" />
+			   <class name="com.tn.tests.AmazonDemoTest" /> 
+		       <!--  	<class name="com.tn.tests.TC_RegisterPageTests" /> 
+		       		<class name="com.tn.tests.TC_LogOutPageTest" />  
+		       	<class name="com.tn.tests.TC_SearchPageTest" />    -->
+		       
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

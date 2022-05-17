@@ -8,13 +8,17 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.tn.tests.TC_SearchPage">
+      <class name="com.tn.tests.TC_SearchPageTest">
         <methods>
+          <include name="VerifySearchUsingTextFromProductDesc_TC007"/>
+          <include name="VerifySearchingWithNonExistingProduct_TC002"/>
           <include name="setUp"/>
+          <include name="VerifySearchingAfterLogin_TC004"/>
+          <include name="VerifySearchingWithoutProductNmae_TC003"/>
           <include name="tearDown"/>
-          <include name="VerifySearchUsingTextFromProductDesc_TC007" invocation-numbers="0"/>
+          <include name="VerifySearchingWithExistingProduct_TC001"/>
         </methods>
-      </class> <!-- com.tn.tests.TC_SearchPage -->
+      </class> <!-- com.tn.tests.TC_SearchPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

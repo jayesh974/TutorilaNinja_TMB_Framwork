@@ -7,9 +7,9 @@ import com.tn.annotations.FrameworkAnnotation;
 import com.tn.enums.CategoryType;
 import com.tn.pages.YourStorePage;
 
-public final class TC_LF_001_LoginPage extends BaseTest {
+public final class TC_LF_001_LoginPageTest extends BaseTest {
 	
-	private TC_LF_001_LoginPage() {}
+	private TC_LF_001_LoginPageTest() {}
 	
 	@Test
 	@FrameworkAnnotation(author= {"Jayesh"},category = {CategoryType.REGRESSION})
@@ -17,7 +17,7 @@ public final class TC_LF_001_LoginPage extends BaseTest {
 		
 		String title = 
 				new YourStorePage()
-				.clickOnMyAccountDrpDown().clinkOnLoginLink()
+				.clickOnMyAccountDrpDown().clinkOnLoginLinkFromMyAccountDrpDown()
 		        .enterEmailAddress(data.get("username")).enterPassword(data.get("password"))
 		        .clickOnLoginBtn().ClickOnLogOutLink().getTitle();
 		
@@ -31,7 +31,7 @@ public final class TC_LF_001_LoginPage extends BaseTest {
 		
 		String title = 
 				new YourStorePage()
-				.clickOnMyAccountDrpDown().clinkOnLoginLink()
+				.clickOnMyAccountDrpDown().clinkOnLoginLinkFromMyAccountDrpDown()
 		        .enterEmailAddress(data.get("username")).enterPassword(data.get("password"))
 		        .clickOnLoginBtn().ClickOnLogOutLink().getTitle();
 		

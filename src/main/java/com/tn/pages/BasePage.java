@@ -3,9 +3,10 @@ package com.tn.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import com.tmb.factories.ExplicitWaitFactory;
+
 import com.tn.driver.DriverManager;
 import com.tn.enums.WaitStrategy;
+import com.tn.factories.ExplicitWaitFactory;
 import com.tn.reports.ExtentLogger;
 
 public class BasePage {

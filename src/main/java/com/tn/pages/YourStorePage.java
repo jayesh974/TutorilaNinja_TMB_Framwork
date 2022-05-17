@@ -15,7 +15,7 @@ public class YourStorePage extends BasePage{
 		return this;
 	}
 	
-	public LoginPage clinkOnLoginLink() {
+	public LoginPage clinkOnLoginLinkFromMyAccountDrpDown() {
 		click(linkLogin, WaitStrategy.CLICKABLE,"inkLogin");
 		return new LoginPage();
 	}

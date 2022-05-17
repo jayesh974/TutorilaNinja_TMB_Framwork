@@ -10,13 +10,15 @@ import java.util.Map;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.tn.constants.FrameworkConstants;
+import com.tn.exceptions.FrameworkException;
+import com.tn.exceptions.InvalidPathForExcelException;
 //import com.tn.exceptions.FrameworkException;
 //import com.tn.exceptions.InvalidPathForExcelException;
 
 
 public final class ExcelUtils {
 
-	
+//	try with resourses --> need not write the finally block to close or something .
 	private ExcelUtils() {}
 
 	public static List<Map<String,String>> getTestDetails(String sheetname){
@@ -45,9 +47,9 @@ public final class ExcelUtils {
 			}
 
 		} catch (FileNotFoundException e) {
-//			throw new InvalidPathForExcelException("Excel File you trying to read is not found");
+			throw new InvalidPathForExcelException("Excel File you trying to read is not found");
 		} catch (IOException e) {
-//			throw new FrameworkException("Some io exception happened  while reading excel file");
+			throw new FrameworkException("Some io exception happened  while reading excel file");
 		}
 		System.out.println(list);
 		return list;
